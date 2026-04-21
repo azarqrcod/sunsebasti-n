@@ -10,130 +10,208 @@
 
 <style>
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #000;
-  color: white;
-  text-align: center;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
 }
 
-.container {
-  padding: 30px 20px;
-  max-width: 420px;
-  margin: auto;
-}
-
-/* Logo */
+/* لوگو */
 .logo {
-  width: 160px;
-  margin-bottom: 20px;
-  animation: float 4s ease-in-out infinite;
+    width: 180px;
+    margin-top: 40px;
+    animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+    0%,100% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
 }
 
-/* Welcome */
+/* Willkommen */
 .welcome {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  line-height: 1.8;
-  margin-bottom: 25px;
-  background: linear-gradient(45deg, #d4af37, #f7e7a0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #d4af37, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Icons */
+/* منو */
+.menu {
+    margin-top: 30px;
+}
+
+.menu img {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px 0;
+    border-radius: 14px;
+}
+
+/* دکمه‌ها */
+.footer {
+    margin-top: 50px;
+    padding: 30px 20px;
+}
+
 .social {
-  display: flex;
-  justify-content: space-between;
-  margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn {
+    width: 85%;
+    max-width: 320px;
+    padding: 15px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 18px;
+    text-decoration: none;
+
+    color: #d4af37;
+    font-weight: 600;
+
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* نور حرکت */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.6s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+/* لمس */
+.btn:active {
+    transform: scale(0.96);
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px rgba(212,175,55,0.6);
 }
 
 .icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  color: #d4af37;
-  text-decoration: none;
-  transition: 0.3s;
+    font-size: 22px;
 }
 
-.icon:hover {
-  transform: scale(1.1);
+/* بخش تبلیغ */
+.promo {
+    margin-top: 70px;
+    padding: 40px 20px;
 }
 
-/* Social text */
-.social-text {
-  font-size: 13px;
-  color: #ccc;
-  margin-bottom: 30px;
+.promo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    background: linear-gradient(45deg, #d4af37, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Menu */
-.menu img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
+.promo p {
+    color: #bbb;
+    font-size: 15px;
+    margin: 10px 0;
 }
 
-/* Footer */
-.footer {
-  font-size: 11px;
-  color: #777;
-  margin-top: 20px;
+.promo-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.promo-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(212,175,55,0.6);
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-
 <img src="logo-max-king.PNG" class="logo">
 
-<div class="welcome">
-Willkommen bei Max King<br>
-Danke für Ihr Vertrauen und Ihre Wahl
-</div>
-
-<div class="social">
-
-<a href="https://maps.google.com/?q=Hobrechtstraße+70A+Berlin" class="icon" target="_blank">📍</a>
-
-<a href="https://wa.me/4917672526577" class="icon" target="_blank">💬</a>
-
-<a href="https://www.instagram.com/sansebastianmaxking/" class="icon" target="_blank">📸</a>
-
-<a href="https://www.tiktok.com/@sansebastian191" class="icon" target="_blank">🎵</a>
-
-</div>
-
-<div class="social-text">
-Folgen Sie uns auf unseren sozialen Kanälen und bleiben Sie auf dem Laufenden
-</div>
+<h1 class="welcome">Willkommen</h1>
 
 <div class="menu">
-<img src="menu-page-1.PNG">
-<img src="menu-page-2.PNG">
-<img src="menu-page-3.PNG">
+    <img src="menu-page-1.PNG">
+    <img src="menu-page-2.PNG">
+    <img src="menu-page-3.PNG">
 </div>
 
 <div class="footer">
-Design & Erstellung: Azar<br>
-azarqrcod@gmail.com
+    <div class="social">
+
+        <a class="btn" href="https://maps.google.com" onclick="navigator.vibrate(10)">
+            <span class="icon">📍</span> Standort
+        </a>
+
+        <a class="btn" href="https://wa.me/491234567890" onclick="navigator.vibrate(10)">
+            <span class="icon">💬</span> WhatsApp
+        </a>
+
+        <a class="btn" href="https://instagram.com" onclick="navigator.vibrate(10)">
+            <span class="icon">📸</span> Instagram
+        </a>
+
+        <a class="btn" href="https://tiktok.com" onclick="navigator.vibrate(10)">
+            <span class="icon">🎵</span> TikTok
+        </a>
+
+    </div>
 </div>
 
+<div class="promo">
+    <h2>Design, das verkauft – nicht nur gut aussieht</h2>
+
+    <p>
+    Moderne Designs für Marken, Restaurants und Social Media.
+    Klar. Elegant. Wirkungsvoll.
+    </p>
+
+    <p>
+    Logos · Menüs · Branding · Content
+    </p>
+
+    <a href="https://wa.me/491234567890" class="promo-btn">Projekt starten</a>
 </div>
 
 </body>
