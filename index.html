@@ -1,93 +1,166 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max King – San Sebastián Cheesecake</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Max King – San Sebastián Cheesecake</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: black;
-            color: gold;
-            text-align: center;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-        .container {
-            max-width: 500px;
-            margin: auto;
-            padding: 20px;
-        }
+<style>
+:root {
+    --gold-1: #d4af37;
+    --gold-2: #f1d77a;
+    --gold-3: #b8962e;
+}
 
-        .logo {
-            width: 180px;
-            margin: 20px auto;
-        }
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #111, #000);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-align: center;
+}
 
-        h1 {
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px 20px;
+}
 
-        .btn {
-            display: block;
-            background: gold;
-            color: black;
-            text-decoration: none;
-            padding: 14px;
-            margin: 10px 0;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+/* LOGO زنده */
+.logo {
+    width: 170px;
+    margin-bottom: 20px;
 
-        .menu-img {
-            width: 100%;
-            margin: 15px 0;
-            border-radius: 10px;
-        }
+    animation: logoFloat 4s ease-in-out infinite,
+               logoGlow 3s ease-in-out infinite;
+}
 
-        .footer {
-            font-size: 12px;
-            margin-top: 30px;
-            color: #aaa;
-        }
-    </style>
+@keyframes logoFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes logoGlow {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(212,175,55,0.2));
+    }
+    50% {
+        filter: drop-shadow(0 0 15px rgba(212,175,55,0.6));
+    }
+    100% {
+        filter: drop-shadow(0 0 5px rgba(212,175,55,0.2));
+    }
+}
+
+/* متن خوش آمد */
+.welcome {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* دکمه‌ها */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.glass-btn {
+    padding: 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(212,175,55,0.35);
+
+    color: var(--gold-1);
+
+    box-shadow: 0 6px 20px rgba(212,175,55,0.15);
+    transition: 0.3s;
+}
+
+.glass-btn:hover {
+    background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* متن شبکه */
+.social-text {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* منو */
+.menu-title {
+    font-family: 'Playfair Display', serif;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--gold-1);
+}
+
+.menu img {
+    width: 100%;
+    margin: 12px 0;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* فوتر */
+.footer {
+    margin-top: 30px;
+    font-size: 11px;
+    color: #777;
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- LOGO -->
+    <!-- لوگو -->
     <img src="logo-max-king.PNG" class="logo">
 
-    <!-- WELCOME -->
-    <h1>Willkommen bei Max King – San Sebastián Cheesecake</h1>
+    <!-- خوش آمد -->
+    <div class="welcome">
+        Willkommen bei uns<br>
+        Vielen Dank für Ihr Vertrauen und Ihre Wahl
+    </div>
 
-    <!-- MENU -->
-    <img src="menu-page-1.PNG" class="menu-img">
-    <img src="menu-page-2.PNG" class="menu-img">
-    <img src="menu-page-3.PNG" class="menu-img">
+    <!-- دکمه‌ها -->
+    <div class="buttons">
+        <a href="https://maps.google.com/?q=Hobrechtstraße+70A+Berlin" class="glass-btn">Standort</a>
+        <a href="https://wa.me/4917672526577" class="glass-btn">WhatsApp</a>
+        <a href="https://www.instagram.com/sansebastianmaxking/" class="glass-btn">Instagram</a>
+        <a href="https://www.tiktok.com/@sansebastian191" class="glass-btn">TikTok</a>
+    </div>
 
-    <!-- LINKS -->
-    <a class="btn" href="https://maps.google.com/?q=Hobrechtstraße 70A, Berlin" target="_blank">
-        📍 Standort
-    </a>
+    <!-- متن شبکه -->
+    <div class="social-text">
+        Bleiben Sie mit uns verbunden und entdecken Sie mehr auf unseren sozialen Medien
+    </div>
 
-    <a class="btn" href="https://www.instagram.com/stories/sansebastianmaxking/3880264288237853951" target="_blank">
-        Instagram
-    </a>
+    <!-- منو -->
+    <div class="menu-title">Unsere Speisekarte</div>
 
-    <a class="btn" href="https://www.tiktok.com/@sansebastian191" target="_blank">
-        TikTok
-    </a>
+    <div class="menu">
+        <img src="menu-page-1.PNG">
+        <img src="menu-page-2.PNG">
+        <img src="menu-page-3.PNG">
+    </div>
 
-    <a class="btn" href="https://wa.me/4917672526577" target="_blank">
-        WhatsApp
-    </a>
-
-    <!-- FOOTER -->
+    <!-- فوتر -->
     <div class="footer">
         Design & Erstellung: Azar<br>
         azarqrcod@gmail.com
