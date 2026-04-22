@@ -73,7 +73,7 @@ h1 {
     box-shadow: 0 0 20px rgba(255,215,0,0.3);
 }
 
-/* TEXT */
+/* CTA TEXT */
 .cta {
     margin-top: 25px;
     color: #ccc;
@@ -81,52 +81,70 @@ h1 {
     line-height: 1.6;
 }
 
-.promo {
-    margin-top: 20px;
+/* SMALL EMAIL BUTTON */
+.email-box {
+    margin-top: 30px;
+}
+
+.email-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: #111;
     color: gold;
-    font-size: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid rgba(255,215,0,0.2);
+    transition: 0.3s;
+}
+
+.email-btn:hover {
+    background: gold;
+    color: black;
+}
+
+/* PROMO */
+.promo {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #bbb;
 }
 
 /* FOOTER */
 .footer {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 13px;
-    color: #777;
+    color: #666;
 }
 </style>
 
 </head>
 <body>
 
-<!-- LOGO -->
 <img src="logo-max-king.PNG" class="logo">
 
 <h1>Willkommen</h1>
 <div class="sub">Danke für Ihr Vertrauen und Ihre Wahl</div>
 
-<!-- MENU -->
 <img src="menu-page-1.PNG" class="menu">
 <img src="menu-page-2.PNG" class="menu">
 <img src="menu-page-3.PNG" class="menu">
 
-<!-- BUTTONS -->
 <div class="container">
-
-<a href="#" class="btn">📍 Standort</a>
-<a href="#" class="btn">💬 WhatsApp</a>
-<a href="#" class="btn">📸 Instagram</a>
-<a href="#" class="btn">🎵 TikTok</a>
-<a href="mailto:youremail@example.com" class="btn">🚀 Projekt starten</a>
-
+    <a href="#" class="btn">📍 Standort</a>
+    <a href="#" class="btn">💬 WhatsApp</a>
+    <a href="#" class="btn">📸 Instagram</a>
+    <a href="#" class="btn">🎵 TikTok</a>
 </div>
 
-<!-- TEXT -->
 <div class="cta">
 Folgen Sie uns auf unseren sozialen Netzwerken, um keine neuen Menüs und Angebote zu verpassen.
 </div>
 
-<div class="promo">
-Design, das verkauft – nicht nur gut aussieht.
+<!-- EMAIL (SMALL BUTTON + TEXT) -->
+<div class="email-box">
+    <a href="mailto:azarqrcod@gmail.com" class="email-btn">Projekt starten</a>
+    <div class="promo">Bereit für ein Design, das wirklich verkauft?</div>
 </div>
 
 <div class="footer">
