@@ -3,159 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Max King – San Sebastián Cheesecake</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<title>Max King - San Sebastián</title>
 
 <style>
-body{
-    margin:0;
-    background:#000;
-    font-family:'Inter',sans-serif;
-    color:#fff;
-    text-align:center;
-}
-
-.container{
-    max-width:420px;
-    margin:auto;
-    padding:25px 20px;
+body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
 }
 
 /* LOGO */
-.logo{
-    width:160px;
-    margin-bottom:15px;
+.logo {
+    width: 140px;
+    margin-top: 40px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
 /* TITLE */
-h1{
-    font-family:'Playfair Display',serif;
-    color:#d4af37;
-    font-size:42px;
-    margin:10px 0 5px;
+h1 {
+    color: gold;
+    margin-top: 15px;
+    font-size: 28px;
 }
 
-/* SUB */
-.sub{
-    font-size:15px;
-    color:#bbb;
-    margin-bottom:30px;
+.sub {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 /* MENU */
-.menu img{
-    width:100%;
-    border-radius:14px;
-    margin-bottom:15px;
+.menu {
+    width: 90%;
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
 
 /* BUTTONS */
-.buttons{
-    margin-top:25px;
+.container {
+    width: 90%;
+    margin: auto;
 }
 
-.btn{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px;
-    margin-bottom:12px;
-    border-radius:16px;
-    background:rgba(255,255,255,0.05);
-    text-decoration:none;
-    color:#fff;
-    font-size:17px;
-    transition:0.2s;
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 12px 0;
+    border-radius: 18px;
+    background: #111;
+    color: gold;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(255,215,0,0.1);
+    transition: 0.3s;
 }
 
-/* LEFT */
-.left{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255,215,0,0.3);
 }
 
-/* ICON */
-.icon{
-    font-size:20px;
-    color:#d4af37;
+/* TEXT */
+.cta {
+    margin-top: 25px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-/* PRESS */
-.btn:active{
-    transform:scale(0.96);
-    background:rgba(255,255,255,0.1);
+.promo {
+    margin-top: 20px;
+    color: gold;
+    font-size: 15px;
 }
 
 /* FOOTER */
-.footer{
-    margin-top:25px;
-    font-size:14px;
-    color:#999;
-    line-height:1.6;
-}
-
-/* CREDIT */
-.credit{
-    margin-top:15px;
-    font-size:12px;
-    color:#555;
+.footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: #777;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="container">
-
+<!-- LOGO -->
 <img src="logo-max-king.PNG" class="logo">
 
 <h1>Willkommen</h1>
+<div class="sub">Danke für Ihr Vertrauen und Ihre Wahl</div>
 
-<div class="sub">
-Vielen Dank für Ihr Vertrauen und Ihre Wahl
+<!-- MENU -->
+<img src="menu-page-1.PNG" class="menu">
+<img src="menu-page-2.PNG" class="menu">
+<img src="menu-page-3.PNG" class="menu">
+
+<!-- BUTTONS -->
+<div class="container">
+
+<a href="#" class="btn">📍 Standort</a>
+<a href="#" class="btn">💬 WhatsApp</a>
+<a href="#" class="btn">📸 Instagram</a>
+<a href="#" class="btn">🎵 TikTok</a>
+<a href="mailto:youremail@example.com" class="btn">🚀 Projekt starten</a>
+
 </div>
 
-<div class="menu">
-<img src="menu-page-1.PNG">
-<img src="menu-page-2.PNG">
-<img src="menu-page-3.PNG">
+<!-- TEXT -->
+<div class="cta">
+Folgen Sie uns auf unseren sozialen Netzwerken, um keine neuen Menüs und Angebote zu verpassen.
 </div>
 
-<div class="buttons">
-
-<a href="#" class="btn">
-<div class="left"><div class="icon">📍</div> Standort</div>
-<div>›</div>
-</a>
-
-<a href="#" class="btn">
-<div class="left"><div class="icon">💬</div> WhatsApp</div>
-<div>›</div>
-</a>
-
-<a href="#" class="btn">
-<div class="left"><div class="icon">📸</div> Instagram</div>
-<div>›</div>
-</a>
-
-<a href="#" class="btn">
-<div class="left"><div class="icon">🎵</div> TikTok</div>
-<div>›</div>
-</a>
-
+<div class="promo">
+Design, das verkauft – nicht nur gut aussieht.
 </div>
 
 <div class="footer">
-Folgen Sie uns auf unseren sozialen Kanälen, um keine neuen Menüs und Angebote zu verpassen
-</div>
-
-<div class="credit">
 Design by Azar
-</div>
-
 </div>
 
 </body>
