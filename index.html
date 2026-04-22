@@ -3,123 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Max King – San Sebastián Cheesecake</title>
+<title>Max King</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    background: #000;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
+body{
+    margin:0;
+    background:#000;
+    font-family:'Inter',sans-serif;
+    color:#fff;
+}
+
+/* CONTAINER */
+.container{
+    max-width:420px;
+    margin:auto;
+    padding:25px 20px;
 }
 
 /* LOGO */
-.logo {
-    width: 180px;
-    margin: 40px auto 20px;
+.logo{
+    width:140px;
+    display:block;
+    margin:0 auto 15px;
 }
 
 /* TITLE */
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    color: #d4af37;
-    margin-bottom: 10px;
+h1{
+    font-family:'Playfair Display',serif;
+    text-align:center;
+    color:#d4af37;
+    font-size:38px;
+    margin:10px 0 5px;
 }
 
-.subtitle {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 40px;
+/* SUB */
+.sub{
+    text-align:center;
+    font-size:14px;
+    color:#aaa;
+    margin-bottom:25px;
 }
 
-/* MENU IMAGE */
-.menu {
-    width: 90%;
-    max-width: 420px;
-    border-radius: 12px;
-    margin-bottom: 40px;
+/* HERO IMAGE */
+.hero{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:25px;
 }
 
 /* BUTTONS */
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 0 20px;
-    margin-bottom: 40px;
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px;
+    margin-bottom:12px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.05);
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    transition:0.2s;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    padding: 16px;
-    text-decoration: none;
-    color: #d4af37;
-    font-size: 18px;
-    transition: all 0.2s ease;
-    border: 1px solid rgba(255,255,255,0.1);
+/* LEFT */
+.left{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
 /* ICON */
-.btn span {
-    font-size: 22px;
+.icon{
+    font-size:20px;
 }
 
-/* CLICK EFFECT */
-.btn:active {
-    transform: scale(0.95);
-    background: rgba(255,255,255,0.1);
+/* ARROW */
+.arrow{
+    opacity:0.5;
 }
 
-/* FOOTER TEXT */
-.footer {
-    font-size: 14px;
-    color: #aaa;
-    padding: 0 20px 40px;
+/* PRESS */
+.btn:active{
+    transform:scale(0.96);
+    background:rgba(255,255,255,0.1);
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    font-size:13px;
+    color:#888;
+    margin-top:25px;
+    line-height:1.6;
 }
 
 /* CREDIT */
-.credit {
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 20px;
+.credit{
+    text-align:center;
+    font-size:11px;
+    color:#555;
+    margin-top:15px;
 }
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <img src="logo-max-king.PNG" class="logo">
 
 <h1>Willkommen</h1>
-<div class="subtitle">
-Vielen Dank, dass Sie sich für uns entschieden haben
+
+<div class="sub">
+Danke, dass Sie sich für uns entschieden haben
 </div>
 
-<img src="menu-page-1.PNG" class="menu">
+<img src="menu-page-1.PNG" class="hero">
 
-<div class="buttons">
-    <a href="#" class="btn"><span>📍</span> Standort</a>
-    <a href="#" class="btn"><span>💬</span> WhatsApp</a>
-    <a href="#" class="btn"><span>📸</span> Instagram</a>
-    <a href="#" class="btn"><span>🎵</span> TikTok</a>
-</div>
+<a href="#" class="btn">
+    <div class="left"><div class="icon">📍</div> Standort</div>
+    <div class="arrow">›</div>
+</a>
+
+<a href="#" class="btn">
+    <div class="left"><div class="icon">💬</div> WhatsApp</div>
+    <div class="arrow">›</div>
+</a>
+
+<a href="#" class="btn">
+    <div class="left"><div class="icon">📸</div> Instagram</div>
+    <div class="arrow">›</div>
+</a>
+
+<a href="#" class="btn">
+    <div class="left"><div class="icon">🎵</div> TikTok</div>
+    <div class="arrow">›</div>
+</a>
 
 <div class="footer">
-Folgen Sie uns in den sozialen Medien, damit Sie keine neuen Menüs und Angebote verpassen
+Folgen Sie uns, um keine neuen Menüs und Angebote zu verpassen
 </div>
 
 <div class="credit">
 Design by Azar
+</div>
+
 </div>
 
 </body>
